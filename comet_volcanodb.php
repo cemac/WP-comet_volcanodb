@@ -20,8 +20,8 @@
   function comet_volcanodb_activate() {
     /* add options for this plugin: */
     add_option('comet_volcanodb_base_path', 'volcanodb');
-    add_option('comet_volcanodb_remote_site', 'http://192.171.139.111');
-    add_option('comet_volcanodb_ssl_verify', false);
+    add_option('comet_volcanodb_remote_site', 'https://comet-volcanodb.org');
+    add_option('comet_volcanodb_ssl_verify', true);
   };
   register_activation_hook(__FILE__, 'comet_volcanodb_activate');
 
