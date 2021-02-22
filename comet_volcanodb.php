@@ -4,7 +4,7 @@
    * Plugin Name:       COMET VolcanoDB
    * Plugin URI:        https://github.com/cemac/WP-comet_volcanodb
    * Description:       Plugin to enable embedding of the COMET Volcano Deformation Database in a WordPress site.
-   * Version:           0.0.1
+   * Version:           0.0.2
    * Author:            CEMAC
    * License:           GNU General Public License v3
    * License URI:       http://www.gnu.org/licenses/gpl-3.0.html
