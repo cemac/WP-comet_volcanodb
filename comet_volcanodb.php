@@ -50,7 +50,7 @@
    */
   function comet_volcanodb_settings_html() {
     /* check ssl verify option: */
-    if (get_option('comet_volcanodb_ssl_verify') == true) { 
+    if (get_option('comet_volcanodb_ssl_verify') == true) {
       $ssl_verify = ' checked';
     } else {
       $ssl_verify = '';
@@ -266,6 +266,11 @@
       /* update links: */
       $search = '/(<a[^>]+href=[\"\']?)\//';
       $replace = '${1}/' . $base_path . '/';
+      $content = preg_replace($search, $replace, $content);
+
+      /* update csv downloads: */
+      $search = '/(<a href=")\/' . $base_path . '(\/volcano-index\/.*\/download)/';
+      $replace = '${1}' . $remote_site . '${2}';
       $content = preg_replace($search, $replace, $content);
 
       /* return the content: */
